@@ -10,7 +10,7 @@
 .search-bar{
     display: flex;
     align-items: center;
-    gap: 12PX;
+    gap: 12px;
 
 }
 .search-bar input{
@@ -65,4 +65,70 @@
 .weather-data .col img{
     width: 26px;
     margin-top: 10px;
+}
+
+/* =========================
+   MOBILE RESPONSIVE
+   ========================= */
+
+@media (max-width: 768px) {
+  .weather {
+    width: 90%;
+    padding: 25px;
+  }
+
+  .search-bar {
+    width: 100%;
+    gap: 10px;
+  }
+
+  .search-bar input {
+    width: 100%;
+    font-size: 16px;
+    height: 45px;
+  }
+
+  .search-bar img {
+    width: 45px;
+    padding: 12px;
+  }
+
+  .weather-icon {
+    width: 120px;
+    margin: 20px 0;
+  }
+
+  .temperature {
+    font-size: 60px;
+  }
+
+  .location {
+    font-size: 28px;
+  }
+
+  .weather-data {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .weather-data .col {
+    font-size: 18px;
+    align-items: center;
+  }
+
+  .weather-data .col img {
+    margin-top: 0;
+  }
+}
+
+/* EXTRA SMALL DEVICES */
+@media (max-width: 480px) {
+  .temperature {
+    font-size: 50px;
+  }
+
+  .location {
+    font-size: 24px;
+  }
 }
